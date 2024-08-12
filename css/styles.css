@@ -1,23 +1,24 @@
-/* Common Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000; /* Dark background for contrast */
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
 /* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
+    background-color: #000;
     text-align: center;
+    color: #fff;
 }
 
-/* Navigation */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: #444;
 }
 
@@ -32,56 +33,96 @@ nav a:hover {
     background-color: #555;
 }
 
-/* Container */
-.container {
-    padding: 20px;
-    text-align: center;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a.sign-up {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+nav ul li a.sign-up:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons .btn.secondary {
+    background-color: #28a745;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Feature Section */
 .feature {
     background-color: #fff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #555;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Auth Container */
-.auth-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-    margin-top: 50px;
+    color: #000; /* Ensure text contrast on white background */
 }
 
 /* Form Container */
@@ -92,6 +133,20 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
     text-align: center;
+    margin: 0 auto; /* Center form on the page */
+    color: #000; /* Ensure text contrast on white background */
+}
+
+/* Auth Container */
+.auth-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: 50px auto; /* Center auth container on the page */
+    color: #000; /* Ensure text contrast on white background */
 }
 
 /* Results Container */
@@ -102,4 +157,17 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 600px;
     text-align: center;
+    margin: 0 auto; /* Center results container on the page */
+    color: #000; /* Ensure text contrast on white background */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
