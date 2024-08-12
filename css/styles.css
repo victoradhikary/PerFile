@@ -1,5 +1,9 @@
 /* General Styles */
 body {
+    background-image: url('../assets/background.jpg'); /* Replace with your background image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     font-family: Arial, sans-serif;
     background-color: #000; /* Dark background for contrast */
     color: #fff;
@@ -9,7 +13,7 @@ body {
 
 /* Header */
 header {
-    padding: 20px;
+    padding: 5px;
     background-color: #000;
     text-align: center;
     color: #fff;
@@ -19,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #444;
+    background-color: #060606;
 }
 
 nav a {
@@ -68,6 +72,10 @@ nav ul li a.sign-up:hover {
 
 /* Hero Section */
 .hero {
+    background-image: url('../assets/background.jpg'); /* Replace with your background image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -165,8 +173,8 @@ nav ul li a.sign-up:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #000;
-    color: #fff;
+    background-color: #e5eae6;
+    color: #0a0a0a;
     position: fixed;
     width: 100%;
     bottom: 0;
